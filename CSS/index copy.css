@@ -1,0 +1,131 @@
+html {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: P_black;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 7vh;
+    color: #365FEF;
+}
+
+p {
+    font-family: P_light;
+    font-size: 24px;
+    line-height: 36px;
+    color: #3D4666;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #365FEF;
+    box-shadow: 0px 4px 4px #365FEF;
+    color: white;
+}
+
+.details_intro {
+    font-family: P_light;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+#menu_button_container {
+    display: block;
+    margin: 1.5vw;
+}
+
+#menu_button {
+    max-width: 6vw;
+    min-width: 125px;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+#content_container {
+    position: abosolute;
+    max-width: 60vw;
+    min-width: 1200px;
+    margin: 1.5%;
+    min-height: 917px;
+    background: #F4F3FF;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+#left_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 45vw;
+    min-width: 450px;
+    min-height: 200px;
+}
+
+#profile_img_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    height: auto;
+    max-width: 20vw;
+    min-width: 200px;
+}
+
+#profile_img_border {
+    position: absolute;
+    height: auto;
+    max-width: 18vw;
+    min-width: 180px;
+}
+
+#profile_img {
+    position: absolute;
+    height: auto;
+    max-width: 14vw;
+    min-width: 160px;
+}
+
+#right_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45vw;
+    min-width: 650px;
+    height: auto;
+    padding: 2vw;
+}
+
+article {
+    min-width: 500px;
+    width: 40vw;
+    margin: 30px;
+    margin-top: -60px;
+}
+
+#profile_details_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 500px;
+    width: 40vw;
+}
+
+#profile_detail_button {
+    max-width: 6.5vw;
+    min-width: 134px;
+    margin: 10px;
+}
