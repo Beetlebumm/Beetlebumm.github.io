@@ -9,8 +9,15 @@ body {
 h1 {
     font-family: P_black;
     font-size: 3vw;
-    line-height: 7vh;
-    color: #365FEF;
+    font-style: normal;
+    color: #0051BA;
+}
+
+h2 {
+    font-family: P_light;
+    font-size: 1vw;
+    font-style: normal;
+    color: #4D6380;
 }
 
 p {
@@ -25,15 +32,15 @@ em {
     font-style: normal;
     font-size: 1vw;
     line-height: 2vw;
-    color: #365FEF;
+    color: #0051BA;
 }
 
 .button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #365FEF;
-    box-shadow: 0px 4px 4px #365FEF;
+    background: #0051BA;
+    box-shadow: 0px 4px 4px #0051BA;
     color: white;
 }
 
@@ -51,7 +58,7 @@ header {
 
 main {
     grid-area: main;
-    background: #F4F3FF;
+    background: #F2F8FF;
 }
 
 nav {
@@ -61,7 +68,7 @@ nav {
     justify-content: center;
     margin: 0px 20px 0px 20px;
     height: 100%;
-    border-right: 0.5vw solid #365FEF;
+    border-right: 0.5vw solid #0051BA;
 }
 
 ul {
@@ -105,36 +112,29 @@ a:visited:hover {
 /*--------------------- content of the body---------------- */
 
 #content_container {
-    margin: 0vw 1.5vw 0vw 1.5vw;
     display: grid;
     flex-direction: row;
-    grid-template-columns: 4fr 6fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left right";
     grid-gap: 0.5vw;
-    padding: 2vw;
+    margin: 0vw 1.5vw 0vw 1.5vw;
 }
 
 
 /*--------------------- content of left body---------------- */
 
 #left_container {
+    grid-area: left;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-#profile_img_border {
-    position: absolute;
-    height: auto;
-    max-width: 14vw;
-    min-width: 140px;
-}
-
-#profile_img {
-    position: absolute;
-    height: auto;
-    max-width: 12vw;
-    min-width: 120px;
+#ikea_preview_img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -144,17 +144,17 @@ a:visited:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-width: 450px;
+    justify-content: space-around;
+    min-width: 300px;
     height: auto;
     padding: 2vw;
 }
 
-article {
-    min-width: 500px;
-    width: 40vw;
-    margin: 30px;
-    margin-top: -60px;
+article {}
+
+#subtitle {
+    margin-top: -3vw;
+    margin-bottom: 5vh;
 }
 
 #profile_details_container {
@@ -162,8 +162,7 @@ article {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    min-width: 500px;
-    width: 40vw;
+    width: 100%;
 }
 
 #profile_detail_button {
@@ -172,33 +171,11 @@ article {
     margin: 1em;
 }
 
-#main_work_instructions_container {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 15vw;
-    max-width: 450px;
-    height: 4vh;
-    position: relative;
-    top: 20%;
-    left: 50%;
-    background: #FFFFFF;
-    border: 1px solid #365FEF;
-    box-sizing: border-box;
-    z-index: 1;
-}
-
-#main_work_instructions {
-    font-size: 1vw;
-    color: #365FEF;
-}
-
 
 /*--------------------- content of the nav---------------- */
 
 #main_works_container {
-    height: 70%;
+    height: 80%;
     padding: 1vw 0vw 1vw 0vw;
 }
 
@@ -209,8 +186,8 @@ article {
     text-align: right;
     color: #888888;
     padding: 1vw;
-    border-top: 0.5px dotted #365FEF;
-    border-bottom: 0.5px dotted #365FEF;
+    border-top: 0.5px dotted #0051BA;
+    border-bottom: 0.5px dotted #0051BA;
 }
 
 .nav_item:hover {
@@ -219,8 +196,20 @@ article {
     line-height: 1.2vw;
     padding: 1.2vw;
     text-align: right;
-    color: #365FEF;
+    color: #0051BA;
     background-color: white;
     border-style: none;
-    box-shadow: 0px 0px 5px #365FEF;
+    box-shadow: 0px 0px 5px #0051BA;
+}
+
+#ikea_list {
+    font-family: P_regular;
+    font-size: 1vw;
+    line-height: 1vw;
+    text-align: right;
+    color: #FFDA1A;
+    background-color: #0051BA;
+    padding: 2vw;
+    border-top: 0.5px dotted #0051BA;
+    border-bottom: 0.5px dotted #0051BA;
 }

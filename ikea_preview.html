@@ -24,6 +24,11 @@
             font-family: 'P_bold';
             src: url('../font/Poppins-Bold.ttf');
         }
+        
+        @font-face {
+            font-family: 'P_ltalic';
+            src: url('../font/Poppins-LightItalic.ttf');
+        }
     </style>
     <link rel="stylesheet" href="./CSS/ikea_preview.css" type="text/css" />
 
@@ -50,6 +55,8 @@
         <div id="right_container">
             <article>
                 <h1 class="profile"> IKEA Checka Ut</h1>
+                <h2 class="profile" id="subtitle"> Redesign of the IKEA self-checkout machine </h2>
+
                 <p class="profile"> I am <em>Yuxin</em>. I like observing humans, and thus I am learning to become a UX designer and user researcher. </p>
                 <p class="profile"> I believe designers can never predict the affordance of the products.
                 </p>
@@ -57,8 +64,8 @@
                 <p class="profile"> </p>
             </article>
             <div id="profile_details_container" class="details_container">
-                <p class="details_intro" id="profile_detail_intro"> if you want to learn more about me &nbsp 👉</p>
-                <p id="profile_detail_button" class="button">About me</p>
+                <p class="details_intro" id="profile_detail_intro"> if you want to know more &nbsp 👉</p>
+                <p id="profile_detail_button" class="button">View</p>
             </div>
 
         </div>
@@ -68,7 +75,9 @@
     <nav>
         <div id="main_works_container">
             <ul>
-                <li class="nav_item">IKEA Checka Ut</li>
+                <li class="nav_item"><a href="index.html">About Me</a></li>
+
+                <li id="ikea_list">IKEA Checka Ut</li>
                 <li class="nav_item">Go-coon</li>
                 <li class="nav_item">Airbnb Audio Host</li>
                 <li class="nav_item">Interative Image description</li>
