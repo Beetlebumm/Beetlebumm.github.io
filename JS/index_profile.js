@@ -1,5 +1,5 @@
 function preload() {
-    profile_img = loadImage("../image/index/profile.png");
+    profile_img = loadImage("../image/index/Profile.png");
 
 }
 
