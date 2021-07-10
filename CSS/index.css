@@ -81,6 +81,11 @@ a:visited {
     color: #888888;
 }
 
+a:visited:hover {
+    text-decoration: none;
+    color: #365FEF;
+}
+
 
 /*--------------------- content of the header---------------- */
 
@@ -179,7 +184,6 @@ article {
     background: #FFFFFF;
     border: 1px solid #365FEF;
     box-sizing: border-box;
-    box-shadow: 0px 4px 4px #365FEF;
     z-index: 1;
 }
 
@@ -193,27 +197,28 @@ article {
 
 #main_works_container {
     height: 70%;
+    overflow: hidden;
 }
 
 .nav_item {
     font-family: P_bold;
-    font-size: 1.5vw;
-    line-height: 1.5vw;
+    font-size: 1vw;
+    line-height: 1vw;
     text-align: right;
     color: #888888;
-    padding: 10px;
+    padding: 1vw;
     border-top: 0.5px dotted #365FEF;
     border-bottom: 0.5px dotted #365FEF;
 }
 
 .nav_item:hover {
     font-family: P_bold;
-    font-size: 2vw;
-    line-height: 2vw;
+    font-size: 1.5vw;
+    line-height: 1.5vw;
+    padding: 1.5vw;
     text-align: right;
     color: #365FEF;
     background-color: white;
-    padding: 35px;
     border-style: none;
     box-shadow: 0px 0px 5px #365FEF;
 }
