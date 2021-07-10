@@ -61,7 +61,7 @@ nav {
     justify-content: center;
     margin: 0px 20px 0px 20px;
     height: 100%;
-    border-right: 7px solid #365FEF;
+    border-right: 0.5vw solid #365FEF;
 }
 
 ul {
@@ -74,17 +74,18 @@ ul {
 
 a {
     text-decoration: none;
-    color: #888888;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 a:visited {
     text-decoration: none;
-    color: #888888;
 }
 
 a:visited:hover {
     text-decoration: none;
-    color: #365FEF;
 }
 
 
@@ -198,11 +199,11 @@ article {
 
 #main_works_container {
     height: 70%;
-    overflow: hidden;
+    padding: 1vw 0vw 1vw 0vw;
 }
 
 .nav_item {
-    font-family: P_bold;
+    font-family: P_regular;
     font-size: 1vw;
     line-height: 1vw;
     text-align: right;

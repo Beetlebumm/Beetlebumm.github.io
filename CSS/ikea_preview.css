@@ -8,40 +8,40 @@ body {
 
 h1 {
     font-family: P_black;
-    font-size: 48px;
+    font-size: 3vw;
     line-height: 7vh;
-    color: #0051BA;
+    color: #365FEF;
 }
 
 p {
     font-family: P_regular;
-    font-size: 18px;
-    line-height: 36px;
-    color: #4D6380;
+    font-size: 1vw;
+    line-height: 2vw;
+    color: #3D4666;
 }
 
 em {
     font-family: P_bold;
     font-style: normal;
-    font-size: 18px;
-    line-height: 36px;
-    color: #0051BA;
+    font-size: 1vw;
+    line-height: 2vw;
+    color: #365FEF;
 }
 
 .button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #0051BA;
-    box-shadow: 0px 4px 4px #0051BA;
+    background: #365FEF;
+    box-shadow: 0px 4px 4px #365FEF;
     color: white;
 }
 
 .details_intro {
     font-family: P_light;
     font-style: normal;
-    font-size: 14px;
-    line-height: 27px;
+    font-size: 0.7vw;
+    line-height: 1vw;
 }
 
 header {
@@ -51,7 +51,7 @@ header {
 
 main {
     grid-area: main;
-    background: #F2F8FF;
+    background: #F4F3FF;
 }
 
 nav {
@@ -61,7 +61,7 @@ nav {
     justify-content: center;
     margin: 0px 20px 0px 20px;
     height: 100%;
-    border-right: 7px solid #0051BA;
+    border-right: 0.5vw solid #365FEF;
 }
 
 ul {
@@ -70,6 +70,22 @@ ul {
     flex-direction: column;
     justify-content: space-around;
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:visited:hover {
+    text-decoration: none;
 }
 
 
@@ -92,8 +108,9 @@ ul {
     margin: 0vw 1.5vw 0vw 1.5vw;
     display: grid;
     flex-direction: row;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 4fr 6fr;
     grid-gap: 0.5vw;
+    padding: 2vw;
 }
 
 
@@ -101,12 +118,23 @@ ul {
 
 #left_container {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-img {
-    object-fit: cover;
-    max-height: 100%;
-    max-width: 100%;
+#profile_img_border {
+    position: absolute;
+    height: auto;
+    max-width: 14vw;
+    min-width: 140px;
+}
+
+#profile_img {
+    position: absolute;
+    height: auto;
+    max-width: 12vw;
+    min-width: 120px;
 }
 
 
@@ -117,11 +145,14 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-width: 450px;
     height: auto;
     padding: 2vw;
 }
 
 article {
+    min-width: 500px;
+    width: 40vw;
     margin: 30px;
     margin-top: -60px;
 }
@@ -131,10 +162,12 @@ article {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    min-width: 500px;
+    width: 40vw;
 }
 
 #profile_detail_button {
-    max-width: 6.5vw;
+    max-width: 8vw;
     min-width: 134px;
     margin: 1em;
 }
@@ -145,20 +178,20 @@ article {
     justify-content: center;
     align-items: center;
     width: 15vw;
+    max-width: 450px;
     height: 4vh;
     position: relative;
     top: 20%;
     left: 50%;
     background: #FFFFFF;
-    border: 1px solid #0051BA;
+    border: 1px solid #365FEF;
     box-sizing: border-box;
-    box-shadow: 0px 4px 4px #0051BA;
     z-index: 1;
 }
 
 #main_work_instructions {
     font-size: 1vw;
-    color: #0051BA;
+    color: #365FEF;
 }
 
 
@@ -166,28 +199,28 @@ article {
 
 #main_works_container {
     height: 70%;
+    padding: 1vw 0vw 1vw 0vw;
 }
 
 .nav_item {
-    font-family: P_bold;
-    font-size: 24px;
-    line-height: 36px;
+    font-family: P_regular;
+    font-size: 1vw;
+    line-height: 1vw;
     text-align: right;
     color: #888888;
-    padding: 10px;
-    border-top: 0.5px dotted #0051BA;
-    border-bottom: 0.5px dotted #0051BA;
-    text-decoration: none;
+    padding: 1vw;
+    border-top: 0.5px dotted #365FEF;
+    border-bottom: 0.5px dotted #365FEF;
 }
 
 .nav_item:hover {
     font-family: P_bold;
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 1.2vw;
+    line-height: 1.2vw;
+    padding: 1.2vw;
     text-align: right;
-    color: #0051BA;
+    color: #365FEF;
     background-color: white;
-    padding: 35px;
     border-style: none;
-    box-shadow: 0px 0px 5px #0051BA;
+    box-shadow: 0px 0px 5px #365FEF;
 }
