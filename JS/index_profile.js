@@ -20,6 +20,6 @@ function draw() {
 
     noStroke;
 
-    sphere(width / 4, 25, 15);
+    sphere(width / 4, 25, 10);
 
 }
